@@ -1,0 +1,21 @@
+services:
+  chrome-app:
+    build: .
+    image: musaspacecadet/chrome:alpine-pool
+    privileged: true
+    environment:
+      - DISPLAY=:99
+      - LIBGL_ALWAYS_SOFTWARE=:1
+    expose:
+      - "8888" # API port
+    security_opt:
+      - seccomp=unconfined
+    cap_add:
+      - SYS_ADMIN
+    shm_size: '2gb'
+    networks:
+      - chrome_network
+
+networks:
+  chrome_network:
+    driver: bridge
