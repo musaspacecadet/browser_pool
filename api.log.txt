@@ -1,0 +1,36 @@
+chrome-app-1  | [app         ] 2025-01-07 10:20:47,628 - INFO - Proxy server started on http://0.0.0.0:8888
+chrome-app-1  | [app         ] Warming up: Created resource at port 9222
+chrome-app-1  | [app         ] 2025-01-07 10:21:02,611 - INFO - 172.20.0.1 [07/Jan/2025:10:21:02 +0000] "POST /browser?timeout=120 HTTP/1.1" 200 295 "-" "python-requests/2.32.3"
+chrome-app-1  | [app         ] 2025-01-07 10:21:04,620 - INFO - 172.20.0.1 [07/Jan/2025:10:21:02 +0000] "POST /browser?timeout=120 HTTP/1.1" 200 295 "-" "python-requests/2.32.3"
+chrome-app-1  | [app         ] 2025-01-07 10:21:06,627 - INFO - 172.20.0.1 [07/Jan/2025:10:21:02 +0000] "POST /browser?timeout=120 HTTP/1.1" 200 295 "-" "python-requests/2.32.3"
+chrome-app-1  | [app         ] Warming up: Created resource at port 9225
+chrome-app-1  | [app         ] 2025-01-07 10:21:08,633 - INFO - 172.20.0.1 [07/Jan/2025:10:21:02 +0000] "POST /browser?timeout=120 HTTP/1.1" 200 295 "-" "python-requests/2.32.3"
+chrome-app-1  | [app         ] 2025-01-07 10:21:10,638 - INFO - 172.20.0.1 [07/Jan/2025:10:21:02 +0000] "POST /browser?timeout=120 HTTP/1.1" 200 295 "-" "python-requests/2.32.3"
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,205 - ERROR - Failed to connect to Chrome on port 9222: Cannot connect to host localhost:9222 ssl:default [Multiple exceptions: [Errno 111] Connect call failed ('::1', 9222, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 9222)]
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,207 - INFO - 172.20.0.1 [07/Jan/2025:10:21:10 +0000] "GET /session/a46aefe9-afd3-405e-a876-caac80c94fd3 HTTP/1.1" 101 0 "-" "-"
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,210 - ERROR - Failed to connect to Chrome on port 9224: Cannot connect to host localhost:9224 ssl:default [Multiple exceptions: [Errno 111] Connect call failed ('::1', 9224, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 9224)]
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,211 - INFO - 172.20.0.1 [07/Jan/2025:10:21:10 +0000] "GET /session/cbbe7406-9572-494c-a93a-1bd22f1de190 HTTP/1.1" 101 0 "-" "-"
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,211 - ERROR - Failed to connect to Chrome on port 9223: Cannot connect to host localhost:9223 ssl:default [Multiple exceptions: [Errno 111] Connect call failed ('::1', 9223, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 9223)]
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,213 - INFO - 172.20.0.1 [07/Jan/2025:10:21:10 +0000] "GET /session/eda565ee-0a36-4069-8e76-14f0a279cb7d HTTP/1.1" 101 0 "-" "-"
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,213 - ERROR - Failed to connect to Chrome on port 9225: Cannot connect to host localhost:9225 ssl:default [Multiple exceptions: [Errno 111] Connect call failed ('::1', 9225, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 9225)]
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,214 - INFO - 172.20.0.1 [07/Jan/2025:10:21:10 +0000] "GET /session/fc980e26-cfe6-4bce-a839-35b6ae647e8c HTTP/1.1" 101 0 "-" "-"
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,215 - ERROR - Failed to connect to Chrome on port 9226: Cannot connect to host localhost:9226 ssl:default [Multiple exceptions: [Errno 111] Connect call failed ('::1', 9226, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 9226)]
+chrome-app-1  | [app         ] 2025-01-07 10:21:11,217 - INFO - 172.20.0.1 [07/Jan/2025:10:21:10 +0000] "GET /session/379ced1f-02c0-4545-9933-34342a287c91 HTTP/1.1" 101 0 "-" "-"
+chrome-app-1  | [app         ] Warming up: Created resource at port 9227
+chrome-app-1  | [app         ] Session a46aefe9-afd3-405e-a876-caac80c94fd3 timed out. Terminating resource at port 9222.
+chrome-app-1  | [app         ] Removed profile directory: /config/chromium_profiles/profile-9222
+chrome-app-1  | [app         ] Resource at port 9222 terminated and resources cleaned up.
+chrome-app-1  | [app         ] Session eda565ee-0a36-4069-8e76-14f0a279cb7d timed out. Terminating resource at port 9223.
+chrome-app-1  | [app         ] Removed profile directory: /config/chromium_profiles/profile-9223
+chrome-app-1  | [app         ] Resource at port 9223 terminated and resources cleaned up.
+chrome-app-1  | [app         ] Session cbbe7406-9572-494c-a93a-1bd22f1de190 timed out. Terminating resource at port 9224.
+chrome-app-1  | [app         ] Error removing profile directory /config/chromium_profiles/profile-9224: [Errno 39] Directory not empty: 'Default'
+chrome-app-1  | [app         ] Resource at port 9224 terminated and resources cleaned up.
+chrome-app-1  | [app         ] Session fc980e26-cfe6-4bce-a839-35b6ae647e8c timed out. Terminating resource at port 9225.
+chrome-app-1  | [app         ] Removed profile directory: /config/chromium_profiles/profile-9225
+chrome-app-1  | [app         ] Resource at port 9225 terminated and resources cleaned up.
+chrome-app-1  | [app         ] Session 379ced1f-02c0-4545-9933-34342a287c91 timed out. Terminating resource at port 9226.
+chrome-app-1  | [app         ] Removed profile directory: /config/chromium_profiles/profile-9226
+chrome-app-1  | [app         ] Resource at port 9226 terminated and resources cleaned up.
+
+

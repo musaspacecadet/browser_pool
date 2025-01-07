@@ -70,7 +70,7 @@ async def test_api_multithreaded_screenshot(api_url, urls):
     """
     Tests the API client with multiple threads, taking screenshots of a list of websites.
     """
-    num_threads = min(len(urls), 5)  # Limit threads to the number of URLs or 15, whichever is smaller
+    num_threads = min(len(urls), 15)  # Limit threads to the number of URLs or 15, whichever is smaller
     results = [None] * len(urls)  # Initialize results list to store (success, data) tuples
 
     # Create a new event loop for the main thread
