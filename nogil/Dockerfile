@@ -73,6 +73,7 @@ RUN set -eux; \
 		--enable-shared \
 		--with-lto \
 		--with-ensurepip \
+        --disable-gil \
 	; \
 	nproc="$(nproc)"; \
 # set thread stack size to 1MB so we don't segfault before we hit sys.getrecursionlimit()
