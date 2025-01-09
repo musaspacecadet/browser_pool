@@ -96,7 +96,7 @@ async def test_api_multithreaded_screenshot(api_url, urls):
             print(f"Error processing screenshot {i} (URL: {urls[i]}): {data}")
 
 if __name__ == "__main__":
-    api_url = "https://chrome-production-271d.up.railway.app"  # Replace with your API URL
+    api_url = "http://172.20.0.2:8888"#"https://chrome-production-271d.up.railway.app"  # Replace with your API URL
     urls = [
         "https://www.youtube.com",
         "https://www.reddit.com",
