@@ -2,7 +2,7 @@ services:
   python_env:
     build:
       context: .
-      dockerfile: lambda.Dockerfile
+      dockerfile: Dockerfile
     container_name: pyenv_python_3_13_dev
     volumes:
       - .:/app  # Mount the current directory to the /app directory in the container
