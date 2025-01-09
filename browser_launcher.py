@@ -54,7 +54,7 @@ class BrowserLauncher:
                 "--disable-gpu",
                 "--no-first-run",
                 f"--remote-debugging-port={debugging_port}",
-                f"--user-data-dir={profile_path}"  # Use a dedicated profile
+                #f"--user-data-dir={profile_path}"  # Use a dedicated profile
             ] + CHROMIUM_ARGS
             chrome_process = subprocess.Popen(chrome_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 

@@ -96,18 +96,12 @@ async def test_api_multithreaded_screenshot(api_url, urls):
             print(f"Error processing screenshot {i} (URL: {urls[i]}): {data}")
 
 if __name__ == "__main__":
-    api_url = "http://172.20.0.2:8888"  # Replace with your API URL
+    api_url = "https://chrome-production-271d.up.railway.app"  # Replace with your API URL
     urls = [
         "https://www.youtube.com",
         "https://www.reddit.com",
         "https://www.wikipedia.org",
         "https://www.example.com",
         "https://www.github.com",
-        "https://www.stackoverflow.com",
-        "https://www.medium.com",
-        "https://www.crackle.com",
-        "https://www.imdb.com",
-        "https://www.rottentomatoes.com"
-
     ] #* 2 # Increase the list size to 100
     asyncio.run(test_api_multithreaded_screenshot(api_url, urls))
