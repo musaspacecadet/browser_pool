@@ -109,8 +109,9 @@ class APIClientBase:
                 on_open(self)
 
         try:
+            ws_url = f"ws://{self.api_base_url.split('//')[1]}/session/{self.session_id}"
             self.ws = websocket.WebSocketApp(
-                f"ws://{self.api_base_url.split('//')[1]}/session/{self.session_id}",
+                ws_url,
                 on_message=on_message_wrapper,
                 on_error=on_error_wrapper,
                 on_close=on_close_wrapper,

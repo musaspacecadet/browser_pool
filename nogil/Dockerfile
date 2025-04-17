@@ -1,10 +1,7 @@
-#
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
-#
+FROM jlesage/baseimage-gui:alpine-3.19-v4
 
-FROM alpine:3.20
+# Set the name of the application.
+RUN set-cont-env APP_NAME "chromium"
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
@@ -125,4 +122,10 @@ RUN set -eux; \
 		ln -svT "$src" "/usr/local/bin/$dst"; \
 	done
 
-CMD ["python3"]
+# Install dependencies and Chrome
+RUN apk add --no-cache chromium 
+
+COPY requirements.txt /requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt --break-system-packages
+
+COPY . /

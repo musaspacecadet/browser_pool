@@ -16,7 +16,7 @@ PROXY_CONNECTION_TIMEOUT = int(os.getenv("PROXY_CONNECTION_TIMEOUT", 5))
 
 # Chromium command-line arguments to ensure clean, private browsing
 CHROMIUM_ARGS = [
-    "--start-maximized",
+    "--start-maximized",#"--headless=new",
     "--disable-backgrounding-occluded-windows",
     "--disable-hang-monitor",
     "--metrics-recording-only",
